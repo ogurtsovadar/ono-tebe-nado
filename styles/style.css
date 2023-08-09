@@ -3,9 +3,8 @@
 .header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 92px 49px 92px 51px;
-    min-width: 1340px;
-    min-height: 109px;
+    padding: 92px 49px 97px 51px;
+    min-width: 1440px;
 }
 
 .header__menu {
@@ -34,11 +33,13 @@
 }
 
 .header__link {
-    text-decoration: none;
-    border-bottom: 1px solid #000;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 1px;
 }
 
 .header__link_active {
+    text-decoration: none;
     border-bottom: 1px solid #00000000;
 }
 
@@ -59,6 +60,12 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24.3px;
+}
+
+.address__styles {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 1px;
 }
 
 .header__address {
@@ -136,6 +143,8 @@
 }
 
 .cover__description {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -176,7 +185,6 @@
 .lots {
     display: block;
     min-width: 1340px;
-    min-height: 579px;
     margin: 180px 50px 181px 50px;
 }
 
